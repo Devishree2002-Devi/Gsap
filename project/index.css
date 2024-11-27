@@ -1,0 +1,373 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background color for the whole page */
+html {
+    background: linear-gradient(150deg, rgb(29, 27, 27),rgb(112, 66, 32));
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 5px 20px;
+    color: #fff;
+    position: sticky;
+    top: 0%;
+}
+
+/* Logo styling */
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 200px;
+}
+
+header .navbar {
+    display: flex;
+    gap: 15px;
+    margin-right: 150px;
+}
+
+/* Navbar link styling */
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+/* Navbar hover effect */
+header .navbar a:hover {
+    background: #dc5c07;
+}
+
+/* Mobile menu toggle button */
+header #toggler {
+    display: none;
+}
+
+/* Hamburger icon styling */
+header .fas.fa-bars {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Center the "FANTA" text */
+.one {
+    text-align: center;
+    height: 100vh;  /* Full viewport height to ensure centering */
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+
+}
+
+/* Styling for "FANTA" text */
+.one h1 {
+    font-size: 220px; /* Large text size */
+    font-weight: bold;
+    color: white; /* Fanta-themed color */
+    text-transform: uppercase; /* Makes text uppercase */
+    letter-spacing: 5px; /* Adds space between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+}
+.one img#fanta {
+    position: absolute; /* Positions image relative to .one container */
+    top: 50%; /* Center vertically */
+    left:71.5%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering using transform */
+    max-width: 90%; /* Adjust size as needed */
+    z-index: 0; /* Places image behind the text */
+    width: 360px;
+    height: 390px;
+}
+.one img#orange-cut {
+    position: absolute; /* Positions image relative to .one container */
+    top: 25%; /* Center vertically */
+    left: 40%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering using transform */
+    max-width: 90%; /* Adjust size as needed */
+    z-index: 2; /* Places image behind the text */
+    width: 190px;
+    height: 205px;
+}
+.one img#orange {
+    position: absolute; /* Positions image relative to .one container */
+    top: 77%; /* Center vertically */
+    left: 59%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering using transform */
+    max-width: 90%; /* Adjust size as needed */
+    z-index: 4; /* Places image behind the text */
+    width: 240px;
+    height: 274px;
+}
+.one img#leaf {
+    position: absolute; /* Positions image relative to .one container */
+    top: 11%; /* Center vertically */
+    left:2%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering using transform */
+    max-width: 90%; /* Adjust size as needed */
+    z-index: 2; /* Places image behind the text */
+    width: 225px;
+    transform: rotate(320deg);
+    height: 235px;
+}
+.one img#leaf2 {
+    position: absolute; /* Positions image relative to .one container */
+    top: 73%; /* Center vertically */
+    left:80%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering using transform */
+    max-width: 90%; /* Adjust size as needed */
+    z-index: 0; /* Places image behind the text */
+    width: 150px;
+    height: 150px;
+    transform: rotate(-95deg); 
+}
+.one img#leaf3 {
+    position: absolute; /* Positions image relative to .one container */
+    top: 25%; /* Center vertically */
+    left:91%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering using transform */
+    max-width: 90%; /* Adjust size as needed */
+    z-index: 0; /* Places image behind the text */
+    width: 250px;
+    height: 220px;
+}
+.two {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(29, 27, 27),rgb(112, 66, 32));
+  }
+  
+  .lft-two,
+  .rght-two {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .lft-two img {
+    margin-top: 10vh;
+    height: 750px;
+    width: 100%;
+  }
+  
+  .rght-two h1 {
+    position: relative;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 5vw;
+  }
+  
+  .rght-two p {
+    font-size: 1vw;
+    color: #fff;
+    width: 75%;
+    z-index: 5;
+  }
+  .rght-two img{
+    position: absolute;
+    left: 350px;
+    height: 380px;
+    width: 280px;
+    margin-top: 240px;
+  }
+
+.container {
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    top: 1385px;
+    font-size: 80px;
+    color: white;
+}
+.contact-section {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(150deg, rgb(29, 27, 27),rgb(112, 66, 32));
+  color: white;
+}
+
+.contact-container {
+  background: #ffffff;
+  border-radius: 8px;
+  background: linear-gradient(150deg, rgb(29, 27, 27),rgb(112, 66, 32));
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Heading Styles */
+.contact-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+  transform-origin: center;
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 1rem;
+  color: white;
+}
+
+input, textarea {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #754a04;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #482b02;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 30px;
+  }
+}
+
+.footer {
+  background: linear-gradient(150deg, rgb(29, 27, 27),rgb(112, 66, 32));
+  color: white;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 30px;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Navbar styling for mobile view */
+    header .navbar {
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        top: 38px;
+        left: 0;
+        background: orange;
+    }
+
+    /* Navbar link styling for mobile */
+    header .navbar a {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Show navbar when hamburger menu is checked */
+    header #toggler:checked ~ .navbar {
+        display: flex;
+    }
+
+    /* Show hamburger icon on mobile */
+    header .fas.fa-bars {
+        display: block;
+    }
+}
